@@ -1,0 +1,29 @@
+{
+    "categories": [
+      {
+        "id": "category1",
+        "name": "Category1",
+        "widgets": [
+          { "id": "widget1", "text": "Widget 1" },
+          { "id": "widget2", "text": "Widget 2" }
+        ]
+      },
+      {
+        "id": "category2",
+        "name": "Category2",
+        "widgets": [
+          { "id": "widget3", "text": "Widget 3" }
+        ]
+      }
+    ],
+    "allWidgets": [
+      { "id": "widget1", "text": "Widget 1" },
+      { "id": "widget2", "text": "Widget 2" },
+      { "id": "widget3", "text": "Widget 3" },
+      { "id": "widget4", "text": "Widget 4" },
+      { "id": "widget5", "text": "Widget 5" }
+    ]
+  }
+
+
+  

@@ -1,0 +1,64 @@
+.progress-bar {
+  display: flex;
+  height: 40px;
+  background-color: green($color: #000000);
+  border-radius: 34px;
+  overflow: hidden;
+  position: absolute;
+
+  .progress-bar-segment {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0 34px;
+    white-space: nowrap;
+
+    
+    transition: width 0.1s ease;
+
+    &.low {
+      background-color: #82ca9d;
+    }
+
+    &.medium {
+      background-color: #ffc658;
+    }
+
+    &.high {
+      background-color: #ff8042;
+    }
+
+    &.critical {
+      background-color: #ff4d4d;
+    }
+
+    .progress-bar-text {
+      position: absolute;
+      left: 0;
+      right: 67px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+  
+  .progress-bar-segment:after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+}

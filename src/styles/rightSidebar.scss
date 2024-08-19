@@ -1,0 +1,109 @@
+.right-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    .btn-close {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #007bff;
+    }
+  
+    .category-section {
+      margin-bottom: 20px;
+  
+      .category-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+  
+      .widget-list {
+        margin-left: 10px;
+      }
+  
+      .widget-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+  
+        label {
+          cursor: pointer;
+        }
+  
+        input[type="checkbox"] {
+          margin-right: 10px;
+        }
+      }
+    }
+  
+    .added-widgets {
+      margin-bottom: 20px;
+  
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .widget-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+  
+        .btn-remove {
+          background-color: #dc3545;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .sidebar-actions {
+      display: flex;
+      justify-content: space-between;
+  
+      .btn-confirm,
+      .btn-cancel {
+        padding: 23px 27px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+  
+      .btn-confirm {
+        background-color: #28a745;
+        color: white;
+      }
+  
+      .btn-confirm:disabled {
+        background-color: #c3e6cb;
+        cursor: not-allowed;
+      }
+  
+      .btn-cancel {
+        background-color: #ffc107;
+        color: white;
+      }
+    }
+  }
+  
